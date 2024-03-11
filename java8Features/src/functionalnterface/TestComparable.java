@@ -1,8 +1,7 @@
 package functionalnterface;
 
-class Circle implements Comparable<Object>
+class Circle implements Comparable<Circle>
 {
-
 	int radius;
 	public Circle(int radius)
 	{
@@ -11,13 +10,10 @@ class Circle implements Comparable<Object>
 	}
 
 	@Override
-	public int compareTo(Object arg)
+	public int compareTo(Circle arg)
 	{
-		Circle c = (Circle)arg;
-//		return radius-((Circle)arg).radius;
-		return radius-c.radius;
+		return radius-arg.radius;
 	}
-	
 }
 public class TestComparable 
 {
@@ -25,6 +21,7 @@ public class TestComparable
 	{
 		Circle c1 = new Circle(30);
 		Circle c2 = new Circle(40);
+		
 		System.out.println(c1.compareTo(c2));
 	}
 }

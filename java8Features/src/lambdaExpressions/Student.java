@@ -26,4 +26,8 @@ public class Student
 	{
 		return courses;
 	}
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + ", courses=" + courses + "]";
+	}
 }

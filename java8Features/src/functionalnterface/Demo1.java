@@ -2,7 +2,7 @@ package functionalnterface;
 
 interface College
 {
-	public void  exam();
+	public  void  exam();
 }
 public class Demo1 
 {
