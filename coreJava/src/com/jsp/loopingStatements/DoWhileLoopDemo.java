@@ -1,4 +1,4 @@
-package loopsDemo;
+package com.jsp.loopingStatements;
 
 public class DoWhileLoopDemo
 {

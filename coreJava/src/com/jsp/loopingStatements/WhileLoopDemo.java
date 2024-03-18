@@ -1,15 +1,17 @@
-package loopsDemo;
+package com.jsp.loopingStatements;
 
-public class ForLoopDemo
+public class WhileLoopDemo 
 {
 	public String findElementInArr(int arr[], int elementTobeFound) 
 	{
-		for(int i=0;i<arr.length;i++)
+		int i = 0;
+		while (i < arr.length) 
 		{
 			if (arr[i] == elementTobeFound) 
 			{
 				return elementTobeFound+" IS PRESENT IN THE ARRAY ";
 			}
+			i++;
 		}
 		return "SORRY!.... " + elementTobeFound + " IS NOT PRESENT IN THE ARRAY";
 	}
@@ -17,7 +19,8 @@ public class ForLoopDemo
 	public static void main(String[] args) {
 		int a[] = { 34, 568, 3298, 549, 23, 45 };
 		WhileLoopDemo demo = new WhileLoopDemo();
-		String findElementInArr = demo.findElementInArr(a,99);
+		String findElementInArr = demo.findElementInArr(a,549);
 		System.out.println(findElementInArr);
 	}
+
 }
